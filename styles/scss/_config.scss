@@ -17,6 +17,11 @@ a {
     color: $darker-color;
 }
 
+h1,
+h2 {
+    font-weight: 400;
+}
+
 ul {
     list-style: none;
 }
@@ -50,6 +55,7 @@ img {
 /*Links Navbar*/
 @mixin link {
     @extend %normalfont;
+    text-transform: uppercase;
     color: $darker-color;
     letter-spacing: 0;
 
@@ -75,4 +81,19 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.break {
+    font-size: 0;
+    display: block;
+}
+
+.title {
+    @extend %bigfont;
+    font-family: $title-font;
+}
+
+.text {
+    @extend %smallfont;
+    padding: $padding 0;
 }

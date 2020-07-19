@@ -1,0 +1,60 @@
+.hero {
+    padding: 2rem $padding;
+
+    .maintitle {
+        @extend %bigfont;
+        display: inline;
+        font-family: $title-font;
+
+        .linethrough {
+            text-decoration: line-through;
+        }
+    }
+}
+
+
+.episodes {
+    padding: $padding;
+    background-image: $section-gradient;
+
+    .title {
+        color: $back-color;
+    }
+}
+
+.about {
+    padding: $padding;
+
+    .text:last-child {
+        padding-top: 0;
+    }
+}
+
+.guests {
+
+    .title {
+        margin: $margin;
+    }
+}
+
+.topics {
+    padding: $padding;
+}
+
+.subscribe {
+    @include flexbox;
+    background-image: $section-gradient;
+    padding: $padding-big $padding;
+
+    .title {
+        color: $back-color;
+        text-align: center;
+        margin-bottom: $margin-big;
+    }
+}
+
+.footer {
+    @include flexbox;
+    padding: $padding;
+
+}

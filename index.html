@@ -8,28 +8,28 @@
     <title>Podcast Channel</title>
 </head>
 <body>
-    <header class="header">
+    <header class="navbar">
         <img src="./images/logo.svg" alt="logo" />
         <nav>
-          <input class="menu__btn" type="checkbox" name="" id="" />
-          <label class="menu__icon" for="menu__btn"> <span class="navIcon"></span> </label>
+          <input class="toggle" type="checkbox" name="" />
+          <div class="burger"><div></div></div>
           <ul class="menu">
-            <a href="#"><li>Episodios</li></a>
-            <a href="#"><li>Nosotros</li></a>
-            <a href="#"><li>Entrevistas</li></a>
-            <a href="#"><li>Tópicos</li></a>
+            <a class="menu__item" href="#"><li>Episodios</li></a>
+            <a class="menu__item" href="#"><li>Nosotros</li></a>
+            <a class="menu__item" href="#"><li>Entrevistas</li></a>
+            <a class="menu__item" href="#"><li>Tópicos</li></a>
           </ul>
         </div>
       </nav>
       </header>
       <main class="main">
-          <section class="welcome">
-            <h1 class="x-large">Hello world pale blue dot</h1>
-            <p class="small">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+          <section class="hero">
+            <h1 class="maintitle">Hello <span class="linethrough">world</span> <span class="break"></span> pale blue dot</h1>
+            <p class="text">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
             <a class="btn" href="#">Conocé más</a>
           </section>
           <section class="episodes">
-              <h2 class="large">Episodios</h2>
+              <h2 class="title">Episodios</h2>
               <div class="episodes__iframes">
                   <img src="" alt="">
                   <img src="" alt="">
@@ -41,14 +41,14 @@
               <div>
                   <img src="" alt="">
                   <div>
-                      <h2 class="large">¿De dónde venimos?</h2>
-                      <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                      <h2 class="title">De dónde<span class="break"></span> venimos</h2>
+                      <p class="text">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                      <p class="text">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
                   </div>
               </div>
           </section>
           <section class="guests">
-              <h2 class="large">Invitadas/os estelares</h2>
+              <h2 class="title">Invitadas/os<span class="break"></span> estelares</h2>
               <div class="guests__pics">
                   <img src="" alt="">
                   <img src="" alt="">
@@ -59,7 +59,7 @@
               </div>
           </section>
           <section class="topics">
-              <h2 class="large">Algunos de nuestros temas</h2>
+              <h2 class="title">Algunos de<span class="break"></span> nuestros temas</h2>
               <div class="topics__examples">
                   <div class="topic">
                        
@@ -69,16 +69,32 @@
                   <div class="topic"></div>
               </div>
           </section>
-          <section class="suscribe">
-
+          <section class="subscribe">
+                <h2 class="title">¿Querés las <span class="break"></span>últimas <span class="break"></span>novedades?</h2>
+                <a class="btn" href="#">Escuchá los episodios</a>
           </section>
       </main>
       <footer class="footer">
-          <div class="copyright">
+          <div class="text">
               © 2019— Hello blue pale dot
           </div>
           <div class="social">
-              
+                <a class="m-1" href="#">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a class="m-1" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="m-1" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="m-1" href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="m-1" href="#">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                
           </div>
       </footer>
     
