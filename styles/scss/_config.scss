@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $back-color;
+    color: $darker-color;
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: $darker-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*Font Sizes*/
+%bigfont {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    letter-spacing: 0;
+}
+
+%midfont {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+%normalfont {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+%smallfont {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+/*Links Navbar*/
+@mixin link {
+    @extend %normalfont;
+    color: $darker-color;
+    letter-spacing: 0;
+
+    &:hover {
+        text-decoration: line-through;
+        color: $light-color;
+    }
+
+    &:active {
+        color: $lighter-color;
+    }
+}
+
+/*Grid*/
+@mixin gridpics {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Flexbox*/
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
