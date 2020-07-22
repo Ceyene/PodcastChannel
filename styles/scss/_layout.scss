@@ -1,3 +1,4 @@
+/* -------- Hero Section -------- */
 .hero {
     padding: 2rem $padding;
 
@@ -11,40 +12,91 @@
         }
     }
 }
+/* ----- End of Hero Section ----- */
+/* ------------------------------- */
 
-
+/* ------ Episodes Section ------- */
 .episodes {
     padding: $padding;
     background-image: $section-gradient;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+
+    &__iframes {
+        @include gridpics;
+        gap: 1rem;
+        padding: 2rem 0;
+        margin-bottom: 9rem;
+    }
 
     .title {
         color: $back-color;
+        padding-top: $padding;
     }
 }
+/* --- End of Episodes Section --- */
+/* ------------------------------- */
 
+/* ------ About Us Section -------- */
 .about {
-    padding: $padding;
+    padding: 27rem $padding $padding;
+
+    img {
+        position: absolute;
+        top: 94rem;
+        left: 0.05rem;
+
+    }
 
     .text:last-child {
         padding-top: 0;
     }
 }
+/* --- End of About Us Section --- */
+/* ------------------------------- */
 
+/* ------- Guests Section -------- */
 .guests {
+    
+    &__pics {
+        @include gridpics;
+    }
 
     .title {
         margin: $margin;
     }
 }
+/* ---- End of Guests Section ---- */
+/* ------------------------------- */
 
+/* ------- Topics Section -------- */
 .topics {
     padding: $padding;
-}
+    
+    &__examples {
+        @include gridpics;
+        gap: 3.5rem;
+        padding: 3rem 0;
 
+        .topic {
+            text-align: center;
+
+            img {
+                width: 6.5rem;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/* ---- End of Topics Section ---- */
+/* ------------------------------- */
+
+/* ------ Subscribe Section ------ */
 .subscribe {
     @include flexbox;
     background-image: $section-gradient;
     padding: $padding-big $padding;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
 
     .title {
         color: $back-color;
@@ -52,9 +104,14 @@
         margin-bottom: $margin-big;
     }
 }
+/* --- End of Subscribe Section -- */
+/* ------------------------------- */
 
+/* ------------ Footer ------------ */
 .footer {
     @include flexbox;
     padding: $padding;
 
 }
+/* -------- End of Footer -------- */
+/* ------------------------------- */

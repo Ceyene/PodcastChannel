@@ -1,4 +1,5 @@
 
+/* ------------ Resets ------------ */
 * {
     margin: 0;
     padding: 0;
@@ -29,8 +30,10 @@ ul {
 img {
     width: 100%;
 }
+/* -------- End of Resets -------- */
+/* ------------------------------- */
 
-/*Font Sizes*/
+/* ----- Some General Styles ------ */
 %bigfont {
     font-size: 2.25rem;
     line-height: 2.625rem;
@@ -51,8 +54,9 @@ img {
     font-size: 0.875rem;
     line-height: 1.375rem;
 }
+/////////////////////////////////////
 
-/*Links Navbar*/
+
 @mixin link {
     @extend %normalfont;
     text-transform: uppercase;
@@ -68,32 +72,53 @@ img {
         color: $lighter-color;
     }
 }
+/////////////////////////////////////
 
-/*Grid*/
+
 @mixin gridpics {
     display: grid;
     grid-template-columns: 1fr;
 }
+/////////////////////////////////////
 
-/*Flexbox*/
+
 @mixin flexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/////////////////////////////////////
 
+/* Spans to break text lines */
 .break {
     font-size: 0;
     display: block;
 }
+/* ------------------------------- */
 
+/* Blue dot in the main title */
+.dot {
+    color: $dark-color;
+}
+/* ------------------------------- */
+
+/* Text Styles */
 .title {
     @extend %bigfont;
     font-family: $title-font;
+    margin-top: 2rem;
 }
 
 .text {
     @extend %smallfont;
     padding: $padding 0;
 }
+
+.description {
+    @extend %midfont;
+    font-family: $title-font;
+    font-weight: 600;
+}
+/* ---- End of General Styles ---- */
+/* ------------------------------- */

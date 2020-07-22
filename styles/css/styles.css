@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
+/* ------------ Resets ------------ */
 * {
   margin: 0;
   padding: 0;
@@ -31,11 +32,18 @@ img {
   width: 100%;
 }
 
-/*Font Sizes*/
+/* -------- End of Resets -------- */
+/* ------------------------------- */
+/* ----- Some General Styles ------ */
 .title, .hero .maintitle {
   font-size: 2.25rem;
   line-height: 2.625rem;
   letter-spacing: 0;
+}
+
+.description {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .btn, .social i, .menu__item {
@@ -48,26 +56,42 @@ img {
   line-height: 1.375rem;
 }
 
-/*Links Navbar*/
-/*Grid*/
-/*Flexbox*/
+/* Spans to break text lines */
 .break {
   font-size: 0;
   display: block;
 }
 
+/* ------------------------------- */
+/* Blue dot in the main title */
+.dot {
+  color: #0000EC;
+}
+
+/* ------------------------------- */
+/* Text Styles */
 .title {
   font-family: "IBM Plex Sans", sans-serif;
+  margin-top: 2rem;
 }
 
 .text {
   padding: 1rem 0;
 }
 
+.description {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* ---- End of General Styles ---- */
+/* ------------------------------- */
+/* ----------- Buttons ----------- */
 .btn {
   text-transform: uppercase;
   color: #060A24;
   letter-spacing: 0;
+  font-weight: 500;
   display: inline-block;
   background: #00F3BB;
   padding: 0.8rem;
@@ -95,6 +119,9 @@ img {
   text-decoration: none;
 }
 
+/* -------- End of Buttons ------- */
+/* ------------------------------- */
+/* --------- Social Links -------- */
 .social {
   width: 60vw;
   margin: 0 auto;
@@ -110,6 +137,9 @@ img {
   color: #00F3BB;
 }
 
+/* ----- End of Social Links ----- */
+/* ------------------------------- */
+/* -------- Navigation Bar -------- */
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,7 +158,9 @@ img {
   width: 1.5rem;
 }
 
-/*Hamburguer Menu*/
+/* ---- End of Navigation Bar ---- */
+/* ------------------------------- */
+/* ------- Hamburguer Menu ------- */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +179,7 @@ img {
   top: 2.8rem;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   visibility: hidden;
   overflow: hidden;
   background-color: #0000EC;
@@ -252,6 +284,9 @@ img {
   top: 0.3rem;
 }
 
+/* ---- End of Hamburguer Menu ---- */
+/* -------------------------------- */
+/* -------- Hero Section -------- */
 .hero {
   padding: 2rem 1rem;
 }
@@ -265,31 +300,91 @@ img {
   text-decoration: line-through;
 }
 
+/* ----- End of Hero Section ----- */
+/* ------------------------------- */
+/* ------ Episodes Section ------- */
 .episodes {
   padding: 1rem;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+          clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+}
+
+.episodes__iframes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem 0;
+  margin-bottom: 9rem;
 }
 
 .episodes .title {
   color: #FFFFFF;
+  padding-top: 1rem;
 }
 
+/* --- End of Episodes Section --- */
+/* ------------------------------- */
+/* ------ About Us Section -------- */
 .about {
-  padding: 1rem;
+  padding: 27rem 1rem 1rem;
+}
+
+.about img {
+  position: absolute;
+  top: 94rem;
+  left: 0.05rem;
 }
 
 .about .text:last-child {
   padding-top: 0;
 }
 
+/* --- End of About Us Section --- */
+/* ------------------------------- */
+/* ------- Guests Section -------- */
+.guests__pics {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 .guests .title {
   margin: 1rem;
 }
 
+/* ---- End of Guests Section ---- */
+/* ------------------------------- */
+/* ------- Topics Section -------- */
 .topics {
   padding: 1rem;
 }
 
+.topics__examples {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 3.5rem;
+  padding: 3rem 0;
+}
+
+.topics__examples .topic {
+  text-align: center;
+}
+
+.topics__examples .topic img {
+  width: 6.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---- End of Topics Section ---- */
+/* ------------------------------- */
+/* ------ Subscribe Section ------ */
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,6 +401,8 @@ img {
           align-items: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding: 4.19rem 1rem;
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .subscribe .title {
@@ -314,6 +411,9 @@ img {
   margin-bottom: 2rem;
 }
 
+/* --- End of Subscribe Section -- */
+/* ------------------------------- */
+/* ------------ Footer ------------ */
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,4 +430,7 @@ img {
           align-items: center;
   padding: 1rem;
 }
+
+/* -------- End of Footer -------- */
+/* ------------------------------- */
 /*# sourceMappingURL=styles.css.map */
