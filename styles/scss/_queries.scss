@@ -5,17 +5,29 @@
 @media (min-width: 400px) {
     .about {
         img {
-            width: 90%;
-            left: 5%;
+            width: 80%;
+            height: 100%;
+            left: 10%;
         }
     }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
     .about {
         img {
-            width: 80%;
-            left: 10%;
+            width: 70%;
+            height: 100%;
+            left: 15%;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .about {
+        img {
+            width: 60%;
+            height: 100%;
+            left: 20%;
         }
     }
 }
@@ -145,6 +157,132 @@
 /* ------------------------------- *
  * ------- Desktop Styles -------- *
  * ------------------------------- */
+@media (min-width: 900px) {
 
+    /* Text Styles */
+    .title {
+        @include bigfontdesk;
+    }
+    
+    .text {
+        @include normalfontdesk;
+    }
 
+    /* Buttons Styles */
+    .btn {
+        &:hover {
+            background: $button-gradient;
+            color: $back-color;
+            text-decoration: none;
+        }
+    }
+
+    /* Links Styles */
+    .menu {
+        &__item {
+            &:hover {
+                @include link-desk;
+            }
+        }
+    }
+
+    /* Navigation Bar Styles */
+    .navbar {
+        padding-top: $padd-ver-2;
+        padding-bottom: $padd-ver-2;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+        padding-right: $padd-hor-big;
+        padding-left: $padd-hor-big;
+
+        .maintitle {
+            @include biggerfont;
+        }
+    }
+
+    /* Episodes Section Styles */
+    .episodes {
+        padding: $padd-ver-7 $padd-hor-mid;
+
+        &__container {
+            iframe {
+                width: 400px;
+                height: 275px;
+            }
+        }
+
+        .title {
+            padding-left: $padd-hor-mid;
+        }
+    }
+
+    /* About Section Styles */
+    .about {
+        padding-bottom: $padd-ver-9;
+        &__text {
+            max-width: 550px;
+        }
+
+        img {
+            top: 76.63rem;
+            left: 11.5rem;
+            width: 30%;
+        }
+    }
+
+    /* Guests Section Styles */
+    .guests {
+        .title {
+            padding-left: $padd-hor-big;
+        }
+
+        &__pics {
+            img {
+                width: 33.33%;
+            }
+        }
+    }
+
+    /* Topics Section Styles */
+    .topics {
+        padding: $padd-ver-5 $padd-hor-big;
+
+        &__examples {
+            grid-template-columns: repeat(4, 20%);
+        }
+    }
+
+    /* Subscribe Section Styles */
+    .subscribe {
+        padding-top: $padd-ver-8;
+        padding-bottom: $padd-ver-7;
+    }
+
+    /* Footer Section Styles */
+    .footer {
+        @include flexmenuhor;
+        padding-right: $padd-hor-mid;
+        padding-left: $padd-hor-mid;
+    }
+
+    /* Social Icons Styles */
+    .social {
+        margin: 0;
+        justify-self: flex-end;
+        width: 30%;
+        padding: 0;
+
+        i {
+            margin: 0 $margin;
+
+            &:hover {
+                color: $light-color;
+                transform: scale(2);
+                transition: 1s 3ms ease;
+            }
+        }
+    }
+}
  /* ---- End of Desktop Styles ---- */
