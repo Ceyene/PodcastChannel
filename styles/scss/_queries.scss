@@ -36,9 +36,8 @@
     
 /*Horizontal Menu*/
 .menu {
+    @include flexmenuhor;
     visibility: visible;
-    flex-direction: row;
-    justify-content: space-between;
     position: relative;
     top: 0;
     background-color: inherit;
@@ -67,7 +66,7 @@
     padding: $padd-ver-5;
 
     .text {
-        max-width: 39.25rem;
+        max-width: $text-size;
         padding-bottom: $padd-ver-3;
     }
 }
@@ -81,7 +80,7 @@
 
 /* Episodes Section: Padding and Borders */
 .episodes {
-    padding: $padd-hor-mid $padd-hor-mid $padd-ver-7 ;
+    padding: $padd-hor-mid $padd-hor-mid $padd-ver-7;
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 
     &__container {
@@ -91,19 +90,19 @@
 
 /* About Section Layout */
 .about {
-    padding: 2rem $padding 5rem;
+    padding: $padd-ver-3 $padding $padd-ver-6;
 
     img {
         position: absolute;
-        top: 78rem;
-        left: 0.05rem;
+        top: $pos-ver-tab;
+        left: $pos-hor-mob;
         width: 45%;
     }
 
     &__text {
         position: relative;
         max-width: 50vw;
-        left: 45vw;
+        left: $pos-hor-tab;
     }
 }
 
@@ -117,14 +116,14 @@
     }
 
     .title {
-        padding-left: $padd-hor-mid;
+        padding: $padd-ver-3 $padd-hor-mid;
     }
 
 }
 
 /* Topics Section Layout */
 .topics {
-    padding: $padd-hor-mid;
+    padding: $padd-ver-3 $padd-hor-mid;
 
     &__examples {
         grid-template-columns: repeat(2, 45%);

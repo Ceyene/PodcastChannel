@@ -66,6 +66,9 @@ img {
     text-transform: uppercase;
     color: $darker-color;
     letter-spacing: 0;
+}
+
+@mixin link-desk {
 
     &:hover {
         text-decoration: line-through;

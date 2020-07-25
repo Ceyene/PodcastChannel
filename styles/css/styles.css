@@ -110,15 +110,6 @@ img {
 }
 
 .btn:hover {
-  text-decoration: line-through;
-  color: #00F3BB;
-}
-
-.btn:active {
-  color: rgba(6, 10, 35, 0.56);
-}
-
-.btn:hover {
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
   text-decoration: none;
@@ -206,15 +197,6 @@ img {
   letter-spacing: 0;
   color: #FFFFFF;
   padding: 1rem;
-}
-
-.menu__item:hover {
-  text-decoration: line-through;
-  color: #00F3BB;
-}
-
-.menu__item:active {
-  color: rgba(6, 10, 35, 0.56);
 }
 
 /* Checkbox */
@@ -526,7 +508,6 @@ img {
   }
   /*Horizontal Menu*/
   .menu {
-    visibility: visible;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -534,6 +515,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    visibility: visible;
     position: relative;
     top: 0;
     background-color: inherit;
@@ -578,11 +563,11 @@ img {
   }
   /* About Section Layout */
   .about {
-    padding: 2rem 1rem 5rem;
+    padding: 2.25rem 1rem 7.5rem;
   }
   .about img {
     position: absolute;
-    top: 78rem;
+    top: 62rem;
     left: 0.05rem;
     width: 45%;
   }
@@ -596,11 +581,11 @@ img {
     width: 50%;
   }
   .guests .title {
-    padding-left: 6.25rem;
+    padding: 2.25rem 6.25rem;
   }
   /* Topics Section Layout */
   .topics {
-    padding: 6.25rem;
+    padding: 2.25rem 6.25rem;
   }
   .topics__examples {
     -ms-grid-columns: (45%)[2];
