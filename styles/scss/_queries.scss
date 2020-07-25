@@ -1,0 +1,152 @@
+/* ------------------------------- *
+ *   Wide Screen Cellphone Styles  *
+ * ------------------------------- */
+
+@media (min-width: 400px) {
+    .about {
+        img {
+            width: 90%;
+            left: 5%;
+        }
+    }
+}
+
+@media (min-width: 450px) {
+    .about {
+        img {
+            width: 80%;
+            left: 10%;
+        }
+    }
+}
+
+/* ------------------------------- *
+ * -------- Tablet Styles -------- *
+ * ------------------------------- */
+@media (min-width: 768px) {
+
+/* Padding of Navbar */
+.navbar {
+        padding: $padding $padd-hor-mid;
+
+        img {
+            width: $logo-desk-size;
+        }
+    }
+    
+/*Horizontal Menu*/
+.menu {
+    visibility: visible;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    background-color: inherit;
+    height: 100%;
+
+    &__item {
+        color: inherit;
+    }
+}
+
+/*Erase Hamburguer Menu*/
+.toggle {
+    display: none;
+}
+.burger {
+    display: none;
+}
+
+/* Erase line breaks */
+.break {
+    display: none;
+}
+
+/* Size of paragraph in Hero */
+.hero {
+    padding: $padd-ver-5;
+
+    .text {
+        max-width: 39.25rem;
+        padding-bottom: $padd-ver-3;
+    }
+}
+
+/* Size of Buttons */
+.btn {
+    display: inline-block;
+    padding: $padding $padd-ver-5;
+    width: auto;
+}
+
+/* Episodes Section: Padding and Borders */
+.episodes {
+    padding: $padd-hor-mid $padd-hor-mid $padd-ver-7 ;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+
+    &__container {
+        width: 40%;
+    }
+}
+
+/* About Section Layout */
+.about {
+    padding: 2rem $padding 5rem;
+
+    img {
+        position: absolute;
+        top: 78rem;
+        left: 0.05rem;
+        width: 45%;
+    }
+
+    &__text {
+        position: relative;
+        max-width: 50vw;
+        left: 45vw;
+    }
+}
+
+/* Guests Section Layout */
+.guests {
+
+    &__pics {
+        img {
+            width: 50%;
+        }
+    }
+
+    .title {
+        padding-left: $padd-hor-mid;
+    }
+
+}
+
+/* Topics Section Layout */
+.topics {
+    padding: $padd-hor-mid;
+
+    &__examples {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+}
+
+/* Subscribe Section Layout */
+.subscribe {
+    padding: $padd-hor-mid;
+}
+
+
+
+}
+
+/* ----- End of Tablet Styles ---- */
+/*                                 */
+
+/* ------------------------------- *
+ * ------- Desktop Styles -------- *
+ * ------------------------------- */
+
+
+ /* ---- End of Desktop Styles ---- */

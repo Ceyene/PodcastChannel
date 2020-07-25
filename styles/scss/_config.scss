@@ -1,5 +1,6 @@
-
-/* ------------ Resets ------------ */
+/* ------------------------------- *
+ * ------------ Resets ----------- *
+ * ------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-weight: 400;
 }
 
@@ -31,9 +33,11 @@ img {
     width: 100%;
 }
 /* -------- End of Resets -------- */
-/* ------------------------------- */
+/*                                 */
 
-/* ----- Some General Styles ------ */
+/* ------------------------------- *
+ * ----- Some General Styles ----- *
+ * ------------------------------- */
 %bigfont {
     font-size: 2.25rem;
     line-height: 2.625rem;
@@ -84,30 +88,43 @@ img {
 
 @mixin flexbox {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 /////////////////////////////////////
+
+@mixin flexpics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/////////////////////////////////////
+@mixin flexmenuhor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+////////////////////////////////////
 
 /* Spans to break text lines */
 .break {
     font-size: 0;
     display: block;
 }
-/* ------------------------------- */
+
 
 /* Blue dot in the main title */
 .dot {
     color: $dark-color;
 }
-/* ------------------------------- */
+
 
 /* Text Styles */
 .title {
     @extend %bigfont;
     font-family: $title-font;
-    margin-top: 2rem;
 }
 
 .text {
@@ -119,6 +136,7 @@ img {
     @extend %midfont;
     font-family: $title-font;
     font-weight: 600;
+    padding-top: $padding;
 }
 /* ---- End of General Styles ---- */
-/* ------------------------------- */
+/*                                 */

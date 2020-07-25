@@ -1,6 +1,8 @@
-/* -------- Hero Section -------- */
+/* ------------------------------- *
+ * --------- Hero Section -------- *
+ * ------------------------------- */
 .hero {
-    padding: 2rem $padding;
+    padding: $padd-ver-3 $padding;
 
     .maintitle {
         @extend %bigfont;
@@ -11,39 +13,56 @@
             text-decoration: line-through;
         }
     }
+
+    .text {
+        padding-bottom: $padd-ver-3;
+    }
 }
 /* ----- End of Hero Section ----- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------ Episodes Section ------- */
+/* ------------------------------- *
+ * ------ Episodes Section ------- *
+ * ------------------------------- */
 .episodes {
-    padding: $padding;
+    padding: $padd-ver-5 $padding $padd-ver-7 $padding;
     background-image: $section-gradient;
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 
     &__iframes {
-        @include gridpics;
-        gap: 1rem;
-        padding: 2rem 0;
-        margin-bottom: 9rem;
+        @include flexpics;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: $padding;
+    }
+
+    &__container {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: $iframe-size;
+            border: none;
+        }
     }
 
     .title {
         color: $back-color;
-        padding-top: $padding;
     }
 }
 /* --- End of Episodes Section --- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------ About Us Section -------- */
+/* ------------------------------- *
+ * ------ About Us Section ------- *
+ * ------------------------------- */
 .about {
-    padding: 27rem $padding $padding;
+    padding: $padd-ver-10 $padding $padding;
 
     img {
         position: absolute;
-        top: 94rem;
-        left: 0.05rem;
+        top: $pos-ver-mob;
+        left: $pos-hor-mob;
 
     }
 
@@ -52,66 +71,81 @@
     }
 }
 /* --- End of About Us Section --- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------- Guests Section -------- */
+/* ------------------------------- *
+ * ------- Guests Section -------- *
+ * ------------------------------- */
 .guests {
     
     &__pics {
-        @include gridpics;
+        @include flexpics;
+        
+        img {
+            width: 100%;
+            margin: $margin-small;
+        }
     }
 
     .title {
-        margin: $margin;
+        padding: $padding;
     }
 }
 /* ---- End of Guests Section ---- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------- Topics Section -------- */
+/* ------------------------------- *
+ * ------- Topics Section -------- *
+ * ------------------------------- */
 .topics {
-    padding: $padding;
+    padding:$padd-ver-3 $padding;
     
     &__examples {
         @include gridpics;
-        gap: 3.5rem;
-        padding: 3rem 0;
+        gap: $padd-ver-4;
+        padding-top: $padd-ver-3;
 
         .topic {
             text-align: center;
 
             img {
-                width: 6.5rem;
+                width: $topic-img-size;
                 display: block;
-                margin: 0 auto;
+                margin: $margin-center;
             }
         }
     }
 }
 /* ---- End of Topics Section ---- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------ Subscribe Section ------ */
+/* ------------------------------- *
+ * ------ Subscribe Section ------ *
+ * ------------------------------- */
 .subscribe {
     @include flexbox;
+    flex-direction: column;
     background-image: $section-gradient;
-    padding: $padding-big $padding;
+    padding: $padd-ver-5 $padding;
     clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
 
     .title {
         color: $back-color;
         text-align: center;
-        margin-bottom: $margin-big;
+        padding-bottom: $padd-ver-3;
     }
 }
 /* --- End of Subscribe Section -- */
-/* ------------------------------- */
+/*                                 */
 
-/* ------------ Footer ------------ */
+/* ------------------------------- *
+ * ----------- Footer ------------ *
+ * ------------------------------- */
 .footer {
     @include flexbox;
+    flex-direction: column;
     padding: $padding;
 
 }
 /* -------- End of Footer -------- */
-/* ------------------------------- */
+/*                                 */
