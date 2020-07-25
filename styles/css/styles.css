@@ -341,8 +341,8 @@ img {
 }
 
 .episodes__container iframe {
-  width: 100%;
-  height: 11.9rem;
+  width: 20.313rem;
+  height: 10rem;
   border: none;
 }
 
@@ -554,12 +554,13 @@ img {
   }
   /* Episodes Section: Padding and Borders */
   .episodes {
-    padding: 6.25rem 6.25rem 9rem;
+    padding: 6.25rem 2.25rem 9rem;
     -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
             clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
   }
   .episodes__container {
-    width: 40%;
+    width: auto;
+    margin: 0.5rem;
   }
   /* About Section Layout */
   .about {

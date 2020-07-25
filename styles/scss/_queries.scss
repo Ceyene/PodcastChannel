@@ -80,11 +80,12 @@
 
 /* Episodes Section: Padding and Borders */
 .episodes {
-    padding: $padd-hor-mid $padd-hor-mid $padd-ver-7;
+    padding: $padd-hor-mid $padd-ver-3 $padd-ver-7;
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 
     &__container {
-        width: 40%;
+        width: auto;
+        margin: $margin;
     }
 }
 
@@ -135,8 +136,6 @@
 .subscribe {
     padding: $padd-hor-mid;
 }
-
-
 
 }
 

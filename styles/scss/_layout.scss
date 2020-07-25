@@ -40,8 +40,8 @@
         width: 100%;
 
         iframe {
-            width: 100%;
-            height: $iframe-size;
+            width: $iframe-hor-size;
+            height: $iframe-ver-size;
             border: none;
         }
     }
