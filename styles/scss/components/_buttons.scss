@@ -28,10 +28,6 @@
 
     i {
         @extend %normalfont;
-
-        &:hover {
-            color: $light-color;
-        }
     }
 }
 /* ----- End of Social Links ----- */

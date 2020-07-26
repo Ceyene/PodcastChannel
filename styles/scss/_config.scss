@@ -124,6 +124,12 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+////////////////////////////////////
+@mixin position {
+    position: relative;
+    left: $pos-hor-tab;
+    max-width: 50vw;
+}
 
 ////////////////////////////////////
 

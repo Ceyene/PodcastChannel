@@ -1,36 +1,117 @@
 /* ------------------------------- *
- *   Wide Screen Cellphone Styles  *
+ *   Wider Screen Cellphone Styles  *
  * ------------------------------- */
-
-@media (min-width: 400px) {
+@media (min-width: 320px) {
     .about {
+        padding-top: 29rem;
         img {
-            width: 80%;
-            height: 100%;
-            left: 10%;
+            top: 74.5rem;
+        }
+    }
+
+    .episodes {
+        &__container {
+            iframe {
+                width: 19rem;
+            }
         }
     }
 }
 
-@media (min-width: 550px) {
+
+@media (min-width: 361px) {
+    .about {
+        img {
+            width: 85%;
+            height: 70%;
+            left: 5%;
+        }
+    }
+}
+
+@media (min-width: 400px) {
+    .menu {
+        height: 40%;
+    }
+    
+    .about {
+        img {
+            height: 70%;
+        }
+    }
+
+}
+
+@media (min-width: 450px) {
     .about {
         img {
             width: 70%;
-            height: 100%;
+            height: 85%;
             left: 15%;
         }
     }
 }
 
-@media (min-width: 650px) {
+
+@media (min-width: 500px) {
     .about {
         img {
+            width: 70%;
+            height: auto;
+            left: 15%;
+            top: 72rem;
+        }
+    }
+}
+
+/* ------------------------------- *
+ * Rotated Screen Cellphone Styles *
+ * ------------------------------- */
+ @media (min-width: 568px) {
+    .menu {
+        height: 100vh;
+    }
+
+    .about {
+        padding-top: 32rem;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .about {
+        padding-top: 31rem;
+
+        img {
             width: 60%;
-            height: 100%;
+            height: auto;
             left: 20%;
         }
     }
 }
+
+@media (min-width: 675px) {
+
+    .about {
+        
+        img {
+            height: 70%;
+        }
+    }
+}
+
+@media (min-width: 730px) {
+
+    .about {
+        padding-top: 36rem;
+
+        img {
+            height: auto;
+        }
+        
+    }
+}
+
 
 /* ------------------------------- *
  * -------- Tablet Styles -------- *
@@ -54,6 +135,7 @@
     top: 0;
     background-color: inherit;
     height: 100%;
+    width: auto;
 
     &__item {
         color: inherit;
@@ -95,6 +177,11 @@
     padding: $padd-hor-mid $padd-ver-3 $padd-ver-7;
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 
+    &__iframes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: $padding;
+    }
+
     &__container {
         width: auto;
         margin: $margin;
@@ -103,19 +190,22 @@
 
 /* About Section Layout */
 .about {
-    padding: $padd-ver-3 $padding $padd-ver-6;
+    padding: $padd-ver-4 $padding $padd-ver-6;
 
     img {
         position: absolute;
         top: $pos-ver-tab;
         left: $pos-hor-mob;
         width: 45%;
+        height: auto;
+    }
+
+    .title {
+        @include position;
     }
 
     &__text {
-        position: relative;
-        max-width: 50vw;
-        left: $pos-hor-tab;
+        @include position;
     }
 }
 
@@ -204,14 +294,7 @@
 
     /* Episodes Section Styles */
     .episodes {
-        padding: $padd-ver-7 $padd-hor-mid;
-
-        &__container {
-            iframe {
-                width: 400px;
-                height: 275px;
-            }
-        }
+        padding-top: $padd-ver-7 $padd-hor-mid;
 
         .title {
             padding-left: $padd-hor-mid;
@@ -221,14 +304,20 @@
     /* About Section Styles */
     .about {
         padding-bottom: $padd-ver-9;
+
         &__text {
-            max-width: 550px;
+            max-width: 460px;
+            left: 40vw;
+        }
+
+        .title {
+            left: 40vw;
         }
 
         img {
-            top: 76.63rem;
-            left: 11.5rem;
-            width: 30%;
+            top: 69.63rem;
+            left: 2.5rem;
+            width: 21.87rem;
         }
     }
 
@@ -286,3 +375,58 @@
     }
 }
  /* ---- End of Desktop Styles ---- */
+
+ @media (min-width: 1024px) {
+    .episodes {
+
+        &__container {
+            iframe {
+                width: 45vw;
+                height: 15.625rem;
+            }
+        }
+    }
+
+    .about {
+        img {
+            top: 80.63rem;
+        }
+    }
+}
+
+@media (min-width: 1140px) {
+    .about {
+        padding-top: $padd-hor-mid;
+
+        img {
+            top: 75.63rem;
+            left: 10vw;
+            width: 28.125rem;
+            height: 41.25rem;
+        }
+
+        .title {
+            left: 50vw;
+        }
+
+        &__text {
+            max-width: 460px;
+            left: 50vw;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .about {
+        padding-top: $padd-ver-6;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about {
+
+        img {
+            left: 20vw;
+        }
+    }
+}
