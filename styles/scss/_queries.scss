@@ -63,6 +63,7 @@
         }
     }
 }
+/*                                 */
 
 /* ------------------------------- *
  * Rotated Screen Cellphone Styles *
@@ -111,7 +112,7 @@
         
     }
 }
-
+/*                                 */
 
 /* ------------------------------- *
  * -------- Tablet Styles -------- *
@@ -138,7 +139,9 @@
     width: auto;
 
     &__item {
-        color: inherit;
+        a {
+            color: inherit;
+        }
     }
 }
 
@@ -219,14 +222,14 @@
     }
 
     .title {
-        padding: $padd-ver-3 $padd-hor-mid;
+        padding: $padd-ver-3;
     }
 
 }
 
 /* Topics Section Layout */
 .topics {
-    padding: $padd-ver-3 $padd-hor-mid;
+    padding: $padd-ver-3;
 
     &__examples {
         grid-template-columns: repeat(2, 45%);
@@ -270,8 +273,10 @@
     /* Links Styles */
     .menu {
         &__item {
-            &:hover {
-                @include link-desk;
+            a {
+                &:hover {
+                    @include link-desk;
+                }
             }
         }
     }
@@ -284,20 +289,9 @@
 
     /* Hero Section Styles */
     .hero {
-        padding-right: $padd-hor-big;
-        padding-left: $padd-hor-big;
 
         .maintitle {
             @include biggerfont;
-        }
-    }
-
-    /* Episodes Section Styles */
-    .episodes {
-        padding-top: $padd-ver-7 $padd-hor-mid;
-
-        .title {
-            padding-left: $padd-hor-mid;
         }
     }
 
@@ -323,9 +317,6 @@
 
     /* Guests Section Styles */
     .guests {
-        .title {
-            padding-left: $padd-hor-big;
-        }
 
         &__pics {
             img {
@@ -336,7 +327,7 @@
 
     /* Topics Section Styles */
     .topics {
-        padding: $padd-ver-5 $padd-hor-big;
+        padding-top: $padd-ver-5;
 
         &__examples {
             grid-template-columns: repeat(4, 20%);
@@ -374,14 +365,16 @@
         }
     }
 }
- /* ---- End of Desktop Styles ---- */
+/*                                 */
 
+ /* ------------------------------- *
+ * ----- Wider Desktop Styles ----- *
+ * ------------------------------- */
  @media (min-width: 1024px) {
     .episodes {
-
         &__container {
             iframe {
-                width: 45vw;
+                width: 40vw;
                 height: 15.625rem;
             }
         }
@@ -416,6 +409,33 @@
     }
 }
 
+@media (min-width: 1280px) {
+    .hero {
+        padding-left: $padd-hor-big;
+        padding-right: $padd-hor-big;
+    }
+
+    .episodes {
+        padding-left: $padd-hor-mid;
+        padding-right: $padd-hor-mid;
+
+        .title {
+            padding-left: $padd-hor-mid;
+        }
+    }
+
+    .guests {
+        .title {
+            padding-left: $padd-hor-big;
+        }
+    }
+
+    .topics {
+        padding-left: $padd-hor-big;
+        padding-right: $padd-hor-big;
+    }
+}
+
 @media (min-width: 1400px) {
     .about {
         padding-top: $padd-ver-6;
@@ -424,9 +444,10 @@
 
 @media (min-width: 1600px) {
     .about {
-
         img {
             left: 20vw;
         }
     }
 }
+ /* ---- End of Desktop Styles ---- */
+ /*                                 */

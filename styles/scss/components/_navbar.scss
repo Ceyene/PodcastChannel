@@ -32,9 +32,12 @@
     background-color: $dark-color;
 
     &__item {
-        @include link;
-        color: $back-color;
         padding: $padding;
+
+        a {
+          @include link;
+          color: $back-color;
+        }
     }
   }
 

@@ -51,7 +51,7 @@ img {
   text-align: center;
 }
 
-.btn, .social i, .menu__item {
+.btn, .social i, .menu__item a {
   font-size: 1rem;
   line-height: 1.75rem;
 }
@@ -182,11 +182,14 @@ img {
 }
 
 .menu__item {
+  padding: 1rem;
+}
+
+.menu__item a {
   text-transform: uppercase;
   color: #060A24;
   letter-spacing: 0;
   color: #FFFFFF;
-  padding: 1rem;
 }
 
 /* Checkbox */
@@ -519,6 +522,7 @@ img {
   }
 }
 
+/*                                 */
 /* ------------------------------- *
  * Rotated Screen Cellphone Styles *
  * ------------------------------- */
@@ -557,6 +561,7 @@ img {
   }
 }
 
+/*                                 */
 /* ------------------------------- *
  * -------- Tablet Styles -------- *
  * ------------------------------- */
@@ -587,7 +592,7 @@ img {
     height: 100%;
     width: auto;
   }
-  .menu__item {
+  .menu__item a {
     color: inherit;
   }
   /*Erase Hamburguer Menu*/
@@ -656,11 +661,11 @@ img {
     width: 50%;
   }
   .guests .title {
-    padding: 2.25rem 6.25rem;
+    padding: 2.25rem;
   }
   /* Topics Section Layout */
   .topics {
-    padding: 2.25rem 6.25rem;
+    padding: 2.25rem;
   }
   .topics__examples {
     -ms-grid-columns: (45%)[2];
@@ -694,11 +699,11 @@ img {
     text-decoration: none;
   }
   /* Links Styles */
-  .menu__item:hover:hover {
+  .menu__item a:hover:hover {
     text-decoration: line-through;
     color: #00F3BB;
   }
-  .menu__item:hover:active {
+  .menu__item a:hover:active {
     color: rgba(6, 10, 35, 0.56);
   }
   /* Navigation Bar Styles */
@@ -707,20 +712,9 @@ img {
     padding-bottom: 1.38rem;
   }
   /* Hero Section Styles */
-  .hero {
-    padding-right: 12.5rem;
-    padding-left: 12.5rem;
-  }
   .hero .maintitle {
     font-size: 4rem;
     line-height: 4.6rem;
-  }
-  /* Episodes Section Styles */
-  .episodes {
-    padding-top: 9rem 6.25rem;
-  }
-  .episodes .title {
-    padding-left: 6.25rem;
   }
   /* About Section Styles */
   .about {
@@ -739,15 +733,12 @@ img {
     width: 21.87rem;
   }
   /* Guests Section Styles */
-  .guests .title {
-    padding-left: 12.5rem;
-  }
   .guests__pics img {
     width: 33.33%;
   }
   /* Topics Section Styles */
   .topics {
-    padding: 4rem 12.5rem;
+    padding-top: 4rem;
   }
   .topics__examples {
     -ms-grid-columns: (20%)[4];
@@ -792,10 +783,13 @@ img {
   }
 }
 
-/* ---- End of Desktop Styles ---- */
+/*                                 */
+/* ------------------------------- *
+ * ----- Wider Desktop Styles ----- *
+ * ------------------------------- */
 @media (min-width: 1024px) {
   .episodes__container iframe {
-    width: 45vw;
+    width: 40vw;
     height: 15.625rem;
   }
   .about img {
@@ -822,6 +816,27 @@ img {
   }
 }
 
+@media (min-width: 1280px) {
+  .hero {
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+  }
+  .episodes {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+  .episodes .title {
+    padding-left: 6.25rem;
+  }
+  .guests .title {
+    padding-left: 12.5rem;
+  }
+  .topics {
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+  }
+}
+
 @media (min-width: 1400px) {
   .about {
     padding-top: 7.5rem;
@@ -833,4 +848,7 @@ img {
     left: 20vw;
   }
 }
+
+/* ---- End of Desktop Styles ---- */
+/*                                 */
 /*# sourceMappingURL=styles.css.map */
