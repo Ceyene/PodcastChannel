@@ -9,4 +9,4 @@ Made with:
   - CSS Grid
   - Mobile First
 
-You can see it in: podcast-channel-hello-pale-blue-dot.netlify.app
+You can see it in: https://podcast-channel-hello-pale-blue-dot.netlify.app
